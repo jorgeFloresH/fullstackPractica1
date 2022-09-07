@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE,{}).then((con)=>{
   //   console.log("saved product");
   // });
 });
-app.listen(port, () => {
+app.listen(port,"127.0.0.1", () => {
   console.log(`App running on port ${port}`);
 });
 // app.listen(port,"127.0.0.1", () => {
